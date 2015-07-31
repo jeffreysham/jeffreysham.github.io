@@ -7,20 +7,15 @@
   <script type="text/javascript" src="background.js">
   </script>
   <link rel="stylesheet" type="text/css" href="style_scripts.css" media="screen" />
-  <!-- Add some style to your site, see http://getbootstrap.com for details -->
 </head>
 <body onload="setBackgroundImage();">
   <!-- Allow compatibility for mobile devices -->
-  <!-- Have pictures for education and previous jobs/projects -->
-  <!-- Make the pictures the same size for the previous jobs/projects portion and are correct sizes-->
-  <!-- Make sure to change the text color when it is night time -->
-  
   
   <section class="top" align="center" style="height: auto;">
   
   		
   
-  		<div class="summary_content">
+  		<div id="summary_content">
   
 		<h1 align="center">Jeffrey Sham</h1>
 		<!-- Add a picture of myself -->
@@ -32,34 +27,35 @@
 		
         </div>
         
-		<div class="columns">
+		<div id="column_content">
+        
+        <div class="columns">
 			<h3>Flutter Inc.</h3>
 			<a href="http://www.theflutterapp.com" target="_blank"><img src="flutter_splash_resized.jpg"></a>
 			
             <h3>HopHacks</h3>
 			<a href="https://www.hophacks.com" target="_blank"><img src="voronoi.png"></a>
             
-			<!--Make it be on the right side-->
+        </div>
+        <div class="columns">
+		
 		  <h3>Mindgrub Technologies</h3>
 			<a href="http://mindgrub.com" target="_blank"><img src="mindgrub_logo_resized.jpg"></a>
 		
-		  
-		
-			<!--Make it be on the right side-->
 		  <h3>Arduino Competition</h3>
 			<a href="http://engineering.jhu.edu/ece/2014/12/05/ieee-arduino-competition-2015/#.VanGRM8ipD9" target="_blank"><img src="voronoi.png"></a>
+        </div>
 		</div>
-
   </section>
-  
-  <div class="contact_content">
+  		<div id="contact_content">
  
-  <p align="center">Contact Information</p>
-  <p align="center">Email: jeffreytys@hotmail.com</p>
-  <p align="center"><a href="https://github.com/jeffreysham" target="_blank">					<img src="github_icon.png" style="width:42px;height:42px;"></a>
-  <a href="https://www.linkedin.com/pub/jeffrey-sham/95/a4b/412" target="_blank"><img src="linkedin icon.png" style="width:42px;height:42px;"></a>
-<a href="Jeffrey Sham resume.pdf" target="_blank"><img src="resume_icon.png" style="width:40px;height:40px;"></a></p>
-	</div>
-    <div align="center"><img src="flower.jpg" class="bg"></div>
+  		<p align="center">Contact Information</p>
+  		<p align="center">Email: jeffreytys@hotmail.com</p>
+  
+  		<p align="center"><a href="https://github.com/jeffreysham" target="_blank"><img src="github_icon.png" style="width:42px;height:42px;"></a>
+  		<a href="https://www.linkedin.com/pub/jeffrey-sham/95/a4b/412" target="_blank"><img src="linkedin icon.png" style="width:42px;height:42px;"></a>
+		<a href="Jeffrey Sham resume.pdf" target="_blank"><img src="resume_icon.png" style="width:40px;height:40px;"></a></p>
+		</div>
+    <div align="center"><img src="flower.jpg" class="bg" id="img"></div>
 </body>
 </html>

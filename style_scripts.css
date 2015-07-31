@@ -1,7 +1,11 @@
-.columns {
-		-webkit-column-count: 2; /* Chrome, Safari, Opera */
-		-moz-column-count: 2; /* Firefox */
-		column-count: 2;
+#column_content {
+	margin: 0 auto;
+}
+
+#column_content .columns {
+		float: left;
+    	margin: 0;
+    	width: 50%;
 }
 	
 .bg {
@@ -12,12 +16,3 @@
 	left: 0;
 	z-index: -5000;
 }
-
-.summary_content {
-	
-}
-
-.contact_content {
-	
-}
-
