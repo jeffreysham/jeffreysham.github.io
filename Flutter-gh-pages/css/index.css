@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'Angelina';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Angelina'), url(fonts/angelina.TTF);
+}
+
+@font-face {
+    font-family: 'Freight';
+    font-style: normal;
+    font-weight: 100;
+    src: local('freight'), url(fonts/FreightSansBookItalic.TTF);
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Merriweather'), url(http://fonts.gstatic.com/s/merriweather/v8/RFda8w1V0eDZheqfcyQ4ED0LW-43aMEzIO6XUTLjad8.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Merriweather'), url(http://fonts.gstatic.com/s/merriweather/v8/RFda8w1V0eDZheqfcyQ4EOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+}
+
+section {
+    background-image: url(/img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 5px;
+    position: relative;
+}
+
+.left {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    width: 50%;
+    max-width: 500px;
+    padding: 30px;
+    -webkit-transform: translateY(-35%);
+    -moz-transform: translateY(-35%);
+    -ms-transform: translateY(-35%);
+    transform: translateY(-35%);
+}
+
+h1 {
+    color: #fff;
+    font-size: 130px;
+    font-family: 'Angelina';
+    font-weight: 400;
+    margin: 0 0 -30px;
+    padding: 30px 0;
+}
+h1 a,
+h1 a:link,
+h1 a:active,
+h1 a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+h2, h3, h4 {
+    color: #b94d00;
+    font-size: 30px;
+    font-family: 'Freight';
+    font-weight: 700;
+    margin: 0;
+}
+
+h2 {
+    font-size: 20px;
+    color: #863800;
+}
+
+h4 {
+    color: #702F00;
+    font-size: 16px;
+    margin: 10px 0 0;
+}
+
+p {
+    font-family: 'Merriweather';
+    font-size: 14px;
+}
+
+a.contact,
+a.contact:link,
+a.contact:active,
+a.contact:visited {
+    font-family: 'Merriweather';
+    font-size: 14px;
+    color: #222;
+    text-decoration: none;
+}
+
+#phone {
+    background-image: url(/img/phone.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 40%;
+    max-width: 400px;
+    height: 75%;
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+}
+
+#app {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    height: 50px;
+    background-image: url(/img/app.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer {
+    padding: 5px;
+}
+
+footer a {
+    margin: 3px;
+    color: #863800;
+    font-family: 'Merriweather';
+    font-size: 12px;
+}
+
+h6 {
+    font-size: 10px;
+    color: #555;
+    margin: 5px;
+    font-family: 'Merriweather';
+}
+
+h6 a,
+h6 a:link,
+h6 a:active,
+h6 a:visited {
+    color: #777;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+@media (max-width: 810px) {
+    p {
+        font-size: 12px;
+    }
+    h4 {
+        font-size: 12px;
+    }
+    a.contact,
+    a.contact:link,
+    a.contact:active,
+    a.contact:visited {
+        font-size: 10px;
+    }
+}
+@media (max-width: 610px) {
+    .left {
+        position: static;
+        width: 100%;
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        padding-top: 0;
+        margin: 0 auto;
+    }
+    #phone {
+        position: static;
+        height: 300px;
+        width: 280px;
+        margin: 0 auto;
+    }
+    #app {
+        position: relative;
+        top: 220px;
+    }
+}
