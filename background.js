@@ -11,12 +11,16 @@ function setBackgroundImage() {
 		img.src = imgURL; 
 		
 		document.getElementById("img").src = imgURL;
-		 
+		var element = document.getElementById("icon_image");
+		el.innerHTML = "<link rel=\"shortcut icon\" href=\"flower.jpg\">";
 	} else {
 		//Set background to night time
 		//Image Credit: Unsplash - Grant McIver
 		var imgURL = "nighttime.jpg";
 		img.src = imgURL; 
+		
+		var element = document.getElementById("icon_image");
+		el.innerHTML = "<link rel=\"shortcut icon\" href=\"nighttime.jpg\">";
 		
 		document.getElementById("img").src = imgURL;
 		document.getElementById("summary_content").style.color = "#ffffff";
