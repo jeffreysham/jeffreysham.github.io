@@ -30,6 +30,5 @@ function setBackgroundImage() {
 		document.getElementById("img").src = imgURL;
 		document.getElementById("summary_content").style.color = "#ffffff";
 		document.getElementById("contact_content").style.color = "#ffffff";
-		document.getElementById("column_content").style.color = "#ffffff";
 	}
 }
