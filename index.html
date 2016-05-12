@@ -1,82 +1,171 @@
 <!DOCTYPE html>
+
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https:////maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+
+<style>
+#profile_pic {
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.employment_portfolio_pics {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  height: 200px;
+}
+
+</style>
 <html>
-<head> 
+
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Jeffrey Sham</title>
-  <script type="text/javascript" src="background.js">
-  </script>
-  <link rel="stylesheet" type="text/css" href="style_scripts.css" media="screen" />
- 
-  
 </head>
-<body onload="setBackgroundImage();">
-  <section class="top" align="center" style="height: auto;">
-  
-  		
-  
-  		<div id="summary_content">
-  
-		<h1 align="center">Jeffrey Sham</h1>
-		<img src="profile_picture.jpg">
-		<h4 align="center">I am a Chinese American born and raised in Maryland. In addition to programming apps and other various things, I enjoy playing video games, dancing, singing, and swimming. <br> I hope you have a fantastic day!</h4>
-		<h2 align="center">Education</h2> 
-		<h3 align="center">Johns Hopkins University</h3>
-		<h3 align="center">Computer Engineering, Computer Science 2017</h3>
-		<img src="jhu.jpg">
-		<h2 align="center">Previous Jobs</h2>
-		
-       
+<body data-spy="scroll" data-target=".navbar">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Jeffrey Sham</a>
+      </div>
+      <ul class="nav navbar-nav pull-right">
+        <li><a href="#about">About</a></li>
+        <li><a href="#employment">Employment</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+          
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row" id="about" style="background-color:white; padding:50px">
+      <div class="col-md-6">
+        <h3 class="text-center" style="color:gray">Hello! I am a Chinese American born and raised in Maryland. In addition to programming apps and other various things, I enjoy playing video games, dancing, singing, and swimming.
+        </h3>
+		<h3 class="text-center" style="color:gray">Currently I am a junior Computer Engineering and Computer Science major at Johns Hopkins University.
+		</h3>
+      </div>
+      <div class="col-md-6">
+        <img class="img-responsive" src="profile_picture.jpg" id="profile_pic"/>
+      </div>
+	  
+    </div>
+    
+    <div class="row" id="employment" style="background-color:gray; padding: 50px">
+      <h1 class="text-center" style="color:white">Employment</h2>
+      <div class="col-md-6">
+		<a href="http://facultyforce.com/" target="_blank">
+			<img class="img-responsive employment_portfolio_pics" src="facultyforce.png"/>
+		</a>
+		<div class="caption">
+			<h3 class="text-center" style="color:white">IT @ Johns Hopkins University</h3>
+		</div>
+      </div>
+      <div class="col-md-6">
+		<a href="http://www.mindgrub.com/blog/todd-marks/mindgrub%E2%80%99s-ping-pong-app-might-be-secret-success" target="_blank">
+			<img class="img-responsive employment_portfolio_pics" src="mindgrub_new_logo.jpg"/>
+		</a>
         
-        <div class="columns">
-			
-			<h3>IT @ Johns Hopkins University</h3>
-			<a href="http://facultyforce.com/" target="_blank"><img src="facultyforce.png"></a>
 		
-			<h3>Mindgrub Technologies</h3>
-			<a href="http://www.mindgrub.com/blog/todd-marks/mindgrub%E2%80%99s-ping-pong-app-might-be-secret-success" target="_blank"><img src="mindgrub_new_logo.jpg"></a>
-
-        </div>
+		<div class="caption">
+			<h3 class="text-center" style="color:white">Mindgrub Technologies</h3>
+		</div>
+      </div>
+    </div>
+    <div class="row" id="portfolio" style="background-color:white; padding: 50px">
+      <h1 class="text-center" style="color:gray">Portfolio</h2>
+      <div class="col-md-6">
+	  
+		<a href="flutter.html" target="_blank">
+			<img class="img-responsive employment_portfolio_pics" src="flutter_splash_resized.jpg"/>
+		</a>
+        
 		
-		<h2 align="center">Previous Projects</h2>
+		<div class="caption">
+			<h3 class="text-center" style="color:gray">Flutter Inc.</h3>
+		</div>
+	  
+		<a href="http://devpost.com/software/saferock" target="_blank">
+			<img class="img-responsive employment_portfolio_pics" src="saferockicon.jpg"/>
+		</a>
+        
 		
-		<div class="columns">
-			<h3>Flutter Inc.</h3>
-			<a href="flutter.html" target="_blank"><img src="flutter_splash_resized.jpg"></a>
-			
-			<h3>HopHacks: Voronoi Cast</h3>
-			<a href="http://devpost.com/software/voronoi-cast" target="_blank"><img src="voronoi.png"></a>
-			
-			<h3>HopHacks: SafeRock</h3>
-			<a href="http://devpost.com/software/saferock" target="_blank"><img src="saferockicon.jpg"></a>
-			
-			<h3>Databases Project: Movie Awards Database</h3>
-			<a href="http://ugrad.cs.jhu.edu/~tlee93/" target="_blank"><img src="oscars_image.jpg"></a>
-			
-			<h3>HatChat</h3>
-			<a href="http://devpost.com/software/hatchat" target="_blank"><img src="hatchat_icon.jpg"></a>
-			
-			<h3>HatChat Dining</h3>
-			<a href="http://devpost.com/software/hatchat-dining-t9bsxy" target="_blank"><img src="hatchat_icon.jpg"></a>
-				
-			<h3>Arduino Competition</h3>
-			<img src="arduino_guitar_resized.jpg">
-				
-			<h3>HopHacks: HealthMate</h3>
-			<a href="http://devpost.com/software/healthmate" target="_blank"><img src="healthmate.jpg"></a>
+		<div class="caption">
+			<h3 class="text-center" style="color:gray">HopHacks: SafeRock</h3>
 		</div>
+		
+		<a href="http://devpost.com/software/hatchat" target="_blank">
+			<img class="img-responsive employment_portfolio_pics" src="hatchat_icon.jpg"/>
+		</a>
+        
+		
+		<div class="caption">
+			<h3 class="text-center" style="color:gray">HatChat</h3>
 		</div>
-			
-  </section>
-  		<div id="contact_content">
- 
-  		<p align="center">Contact Information</p>
-  		<p align="center">Email: jsham2@jhu.edu</p>
-  
-  		<p align="center"><a href="https://github.com/jeffreysham" target="_blank"><img src="github_icon.png" style="width:42px;height:42px;"></a>
-  		<a href="https://www.linkedin.com/pub/jeffrey-sham/95/a4b/412" target="_blank"><img src="linkedin icon.png" style="width:42px;height:42px;"></a>
-		<a href="Jeffrey Sham resume.pdf" target="_blank"><img src="resume_icon.png" style="width:40px;height:40px;"></a></p>
+		
+		<a href="http://devpost.com/software/hatchat" target="_blank">
+			<img class="img-responsive employment_portfolio_pics" src="arduino_guitar_resized.jpg"/>
+		</a>
+        
+		
+		<div class="caption">
+			<h3 class="text-center" style="color:gray">Arduino Competition</h3>
 		</div>
-    <div align="center"><img class="bg" id="img"></div>
+	  
+      </div>
+      <div class="col-md-6">
+        
+		<a href="http://devpost.com/software/voronoi-cast" target="_blank">
+			<img class="img-responsive employment_portfolio_pics" src="voronoi.png"/>
+		</a>
+        
+		
+		<div class="caption">
+			<h3 class="text-center" style="color:gray">HopHacks: Voronoi Cast</h3>
+		</div>
+		
+		<a href="http://ugrad.cs.jhu.edu/~tlee93/" target="_blank">
+			<img class="img-responsive employment_portfolio_pics" src="oscars_image.jpg"/>
+		</a>
+        
+		
+		<div class="caption">
+			<h3 class="text-center" style="color:gray">Databases Project: Movie Awards Database</h3>
+		</div>
+		
+		<a href="http://devpost.com/software/hatchat-dining-t9bsxy" target="_blank">
+			<img class="img-responsive employment_portfolio_pics" src="hatchat_icon.jpg"/>
+		</a>
+        
+		
+		<div class="caption">
+			<h3 class="text-center" style="color:gray">HatChat Dining</h3>
+		</div>
+		
+		<a href="http://devpost.com/software/healthmate" target="_blank">
+			<img class="img-responsive employment_portfolio_pics" src="healthmate.jpg"/>
+		</a>
+        
+		
+		<div class="caption">
+			<h3 class="text-center" style="color:gray">HopHacks: HealthMate</h3>
+		</div>
+		
+      </div>
+    </div>
+    <div class="row" id="contact" style="background-color:gray; padding:50px">
+      <h1 class="text-center" style="color:white">Contact Information</h1>
+      <h4 class="text-center" style="color:white">Email: jsham2@jhu.edu</h4>
+      <ul class="list-inline text-center">
+        <li><a href="https://www.linkedin.com/in/jeffrey-sham-412a4b95" target="_blank"><i class="fa fa-2x fa-linkedin" style="color:white"></i></a></li>
+        <li><a href="https://github.com/jeffreysham" target="_blank"><i class="fa fa-2x fa-github" style="color:white"></i></a></li>
+		<li><a href="Jeffrey Sham resume.pdf" target="_blank"><i class="fa fa-2x fa-file-text" style="color:white"></i></a></li>
+		
+	  </ul>
+    </div>
+  </div>
 </body>
+
 </html>
