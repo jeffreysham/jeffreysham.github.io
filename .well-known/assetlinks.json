@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.corriehealth.corrie",
+    "sha256_cert_fingerprints":
+    ["BD:D3:1D:2B:A7:0E:63:9F:FF:3D:2A:E0:61:7A:D3:C5:A2:06:EB:10:71:36:15:06:16:F2:F1:97:D7:4A:9F:82",
+     "29:97:AC:4B:55:E7:93:CD:5D:D0:69:24:BC:E9:64:E9:76:C4:3F:D8:B6:1B:0D:70:43:A3:F1:D3:26:F2:69:31"]
+  }
+}]
