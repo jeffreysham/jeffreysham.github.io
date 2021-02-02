@@ -3,6 +3,7 @@
 <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
 <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
 <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script>
   $(document).ready(function() {
     var d = new Date();
@@ -36,14 +37,18 @@
 
 .night {
     background-image: url(nighttime.jpg);
-    background-attachment: fixed;
-    background-size:100%;
 }
 
 .day {
     background-image: url(flower.jpg);
-    background-attachment: fixed;
-    background-size:100%;
+}
+.navbar-toggler-icon {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg");
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-size: 100% 100%;
 }
 
 </style>
@@ -62,8 +67,11 @@
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="#">Jeffrey Sham</a>
+        <div class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </div>
       </div>
-      <div class="navbar-collapse collapse">
+      <div id="main-navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav pull-right">
           <li><a href="#about">About</a></li>
           <li><a href="#employment">Employment</a></li>
